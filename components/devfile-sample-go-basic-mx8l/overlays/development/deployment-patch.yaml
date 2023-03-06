@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic-mx8l
+  namespace: anjoseph-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:96d8655bf9be0a76c97dcd42c4362932e44605bdc33ce4b3ab76e0d70965fdf9
+        name: my-go
+        resources: {}
+status: {}
